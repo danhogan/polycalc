@@ -7,15 +7,17 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
     theme: {
+        dark: window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches,
         themes: {
             light: {
-                primary: colors.cyan,
-                // secondary: colors.grey.darken1,
-                // accent: colors.shades.black,
+                primary: colors.indigo.lighten1,
+                secondary: colors.orange.darken2,
+                accent: colors.shades.black,
                 // error: colors.red.accent3,
             },
             dark: {
-                primary: colors.cyan.darken4,
+                primary: colors.indigo.darken4,
+                secondary: colors.orange,
             },
         },
     },
