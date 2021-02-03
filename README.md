@@ -1,4 +1,4 @@
-# polycalc
+# topescalc
 
 ## Project setup
 ```

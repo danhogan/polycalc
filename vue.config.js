@@ -3,7 +3,7 @@ module.exports = {
     "vuetify"
   ],
   pwa: {
-    name: "PolyCalc",
+    name: "TopesCalc",
     themeColor: "#1a237e",
     msTileColor: "#1a237e",
     appleMobileWebAppCache: "yes",
