@@ -43,6 +43,9 @@ export default {
     watch: {
         localValue(){
             this.$emit('topBarValue', this.localValue);
+        },
+        value(){
+            this.localValue = this.value;
         }
     },
     created(){
