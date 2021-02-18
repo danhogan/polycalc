@@ -146,6 +146,59 @@ let units = [
         defenseValue: 1,
         maxHP: 20
     },
+    {
+        name: 'Shaman',
+        attackValue: 1,
+        defenseValue: 2,
+        maxHP: 10
+    },
+    {
+        name: 'Hexapod',
+        attackValue: 3,
+        defenseValue: 1,
+        maxHP: 5
+    },
+    {
+        name: 'Phychi',
+        attackValue: 1,
+        defenseValue: 2,
+        maxHP: 5
+    },
+    {
+        name: 'Raychi',
+        attackValue: 3,
+        defenseValue: 2,
+        maxHP: 15
+    },
+    {
+        name: 'Kiton',
+        attackValue: 1,
+        defenseValue: 3,
+        maxHP: 20
+    },
+    {
+        name: 'Doomux',
+        attackValue: 4,
+        defenseValue: 2,
+        maxHP: 20
+    },
+    {
+        name: 'Exida',
+        attackValue: 3,
+        defenseValue: 1,
+        maxHP: 10
+    },
+    {
+        name: 'Centipede',
+        attackValue: 4,
+        defenseValue: 3,
+        maxHP: 20
+    },
+    {
+        name: 'Segment',
+        defenseValue: 2,
+        maxHP: 10
+    }
 ];
 
 export default units;

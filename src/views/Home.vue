@@ -12,6 +12,12 @@
                         label="Veteran"
                     ></v-checkbox>
                 </v-col>
+                <v-col>
+                    <v-checkbox
+                        v-model="boost"
+                        label="Boost"
+                    ></v-checkbox>
+                </v-col>
             </v-row>
         </v-container>
         
@@ -37,6 +43,12 @@
                     <v-checkbox
                         v-model="defenderVeteran"
                         label="Veteran"
+                    ></v-checkbox>
+                </v-col>
+                <v-col>
+                    <v-checkbox
+                        v-model="poison"
+                        label="Poisoned"
                     ></v-checkbox>
                 </v-col>
             </v-row>
@@ -125,11 +137,15 @@ export default {
             defenderVeteran: false,
             attackerMinHealth: 1,
             defenderMinHealth: 1,
+            boost: false,
+            poison: false
         };
     },
     methods: {
         attack() {
             let defenseBonus = this.defenseBonus ? 1.5 : this.wallBonus ? 4 : 1;
+            if (this.poison){ this.defenseBonus *= 0.8; }
+            if (this.boost){ this.attackValue += 0.5; }
             let attackForce = this.attackValue * (this.attackerHealth / this.attackerMax);
             let defenseForce = this.defenseValue * (this.defenderHealth / this.defenderMax) * defenseBonus;
             let totalDamage = attackForce + defenseForce;
