@@ -16,7 +16,7 @@
                 <v-icon v-if="!$vuetify.theme.dark">mdi-white-balance-sunny</v-icon>
             </div>
             <v-switch class="dark-light-switch" v-model="$vuetify.theme.dark" color="secondary"></v-switch>
-            <v-btn href="https://github.com/danhogan/polycalc" target="_blank" text>
+            <v-btn class="github-link" href="https://github.com/danhogan/polycalc" target="_blank" text>
                 <span class="mr-2">Github</span>
                 <v-icon>mdi-open-in-new</v-icon>
             </v-btn>
@@ -57,8 +57,18 @@ export default {
         padding-top: 1.5em;
     }
 
+    #app .col {
+        padding-top: 0;
+    }
+
     .dark-light-icon {
         margin-right: 1em;
         padding-top: 0.25em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .github-link, .dark-light-icon {
+            display: none;
+        }
     }
 </style>

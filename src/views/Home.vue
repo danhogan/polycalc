@@ -241,20 +241,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
-    max-width: 800px;
-    margin: 2em auto 0 auto;
-}
+    .home {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
-.bonusContainer {
-    padding-top: 0;
-}
+    .bonusContainer {
+        padding-top: 0;
+    }
 
-.unitSelectContainer {
-    padding-bottom: 0;
-}
+    .unitSelectContainer {
+        padding-bottom: 0;
+    }
 
-.refresh {
-    margin-top: 2em;
-}
+    .refresh {
+        margin-top: 2em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .v-card__text {
+            padding-bottom: 0;
+        }
+
+        .v-input--selection-controls {
+            margin-top: 0;
+        }
+    }
 </style>
